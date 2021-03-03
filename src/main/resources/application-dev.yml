@@ -1,0 +1,2 @@
+spring.profiles: dev
+service.url: http://localhost:8080

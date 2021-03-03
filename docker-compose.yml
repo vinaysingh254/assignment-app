@@ -1,0 +1,23 @@
+version: '3.6'
+
+services:
+  assignment-app:
+    image: 'vinaysingh913/assignment-app:1.0'
+    ports:
+      - "8081:8081"
+    restart:
+      on-failure
+    environment:
+        - "SPRING_PROFILES_ACTIVE=prod"
+    networks:
+      - gateway
+
+  backend-services:
+    image: 'xyzassessment/backend-services'
+    ports:
+      - "8080:8080"
+    networks:
+      - gateway
+
+networks:
+  gateway: {}

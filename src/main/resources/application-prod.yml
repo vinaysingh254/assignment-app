@@ -1,0 +1,2 @@
+spring.profiles: prod
+service.url: http://backend-services:8080
