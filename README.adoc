@@ -1,6 +1,10 @@
 # project design
+
 ## AS-1:
-- To achive this goal AppController has a service endpoint defined with '/aggregation'. PricingClient, ShipmentClient, TrackClient is defined to call individual apis. AppClientService consolidating result of these there api responses.
+
+- To achieve this goal AppController has a service endpoint defined with '/aggregation'.
+PricingClient, ShipmentClient, TrackClient is defined to call individual apis.
+AppClientService consolidating result of these there api responses.
 - *CompletableFuture* class implements the Future interface, so we can use it as a Future implementation, but with additional completion logic.
 
 ## AS-2:
